@@ -1,5 +1,5 @@
 module ConectaAddressBr
-    class State
+    class States
         def names
             fetch('creature.animal.name')
         end
