@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    conecta_address_br (0.1.0)
+    conecta_address_br (0.1.1)
 
 GEM
   remote: https://rubygems.org/
