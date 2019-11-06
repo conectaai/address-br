@@ -1,0 +1,32 @@
+brasil:
+  AC:
+  AL:
+  AP:
+  AM:
+  BA:
+  DF:
+  ES:
+  GO:
+  MA:
+  MT:
+  MS:
+  MG:
+  PB:
+  PR:
+  PE:
+  PI:
+  RJ:
+    [
+      "Niterói", 
+      "Rio de Janeiro",
+      "São Gonçalo",
+      "Macaé"
+    ]
+  RN:
+  RS:
+  RO:
+  RR:
+  SC:
+  SP:
+  SE:
+  TO:
