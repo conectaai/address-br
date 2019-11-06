@@ -1,6 +1,23 @@
 require "conecta_address_br"
 
 module ConectaAddressBr
+  class Config
+    @locale = nil
+
+    class << self
+      attr_writer :locale
+
+      def locale
+        @locale || I18n.locale
+      end
+
+      def own_locale
+        @locale
+      end
+    end
+end
+
+class Base
   def regexify(reg)
     reg = reg.source if reg.respond_to?(:source) # Handle either a Regexp or a String that looks like a Regexp
     reg
