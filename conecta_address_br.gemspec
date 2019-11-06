@@ -5,8 +5,8 @@ require "conecta_address_br/version"
 Gem::Specification.new do |spec|
   spec.name          = "conecta_address_br"
   spec.version       = ConectaAddressBr::VERSION
-  spec.authors       = ["Eduardo Martins"]
-  spec.email         = ["eduardomg@id.uff.br"]
+  spec.authors       = ["Daniel Lessa, Eduardo Martins"]
+  spec.email         = ["tecnologia@conectaai.com"]
 
   spec.summary       = %q{Estados e Cidades do Brasil.}
   spec.description   = %q{Responsável por relacionar localmente os estados e as cidades brasileiras.}
