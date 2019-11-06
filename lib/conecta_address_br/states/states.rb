@@ -1,7 +1,7 @@
 module ConectaAddressBr
     class States
-        def names
-            fetch('creature.animal.name')
+        def cidades(sigla)
+            fetch("BR.#{sigla}")
         end
     end
 end
