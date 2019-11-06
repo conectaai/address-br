@@ -1,5 +1,11 @@
 require "conecta_address_br"
 
+require 'i18n'
+require 'set' # Fixes a bug in i18n 0.6.11
+
+I18n.load_path += Dir[File.join(mydir, 'locales', '**/*.yml')]
+I18n.reload! if I18n.backend.initialized?
+
 module ConectaAddressBr
   class Config
     @locale = nil
