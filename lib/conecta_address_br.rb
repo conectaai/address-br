@@ -1,4 +1,4 @@
-require "conecta_address_br/version"
+require "conecta_address_br"
 
 module ConectaAddressBr
   class Error < StandardError; end
