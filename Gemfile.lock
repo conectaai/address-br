@@ -2,10 +2,14 @@ PATH
   remote: .
   specs:
     conecta_address_br (0.1.1)
+      i18n (>= 1.6, < 1.8)
 
 GEM
   remote: https://rubygems.org/
   specs:
+    concurrent-ruby (1.1.5)
+    i18n (1.7.0)
+      concurrent-ruby (~> 1.0)
     rake (10.5.0)
 
 PLATFORMS
