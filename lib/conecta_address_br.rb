@@ -21,6 +21,7 @@ module ConectaAddressBr
         @locale
       end
     end
+  end
 end
 
 class Base
