@@ -10,8 +10,6 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/conectaai/address-br"
   spec.license       = "MIT"
 
-  spec.add_dependency('i18n', '>= 1.6', '< 1.8')
-
   # spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
   # spec.metadata["homepage_uri"] = spec.homepage
   # spec.metadata["source_code_uri"] = "https://github.com/conectaai/address-br"
