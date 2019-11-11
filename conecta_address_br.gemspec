@@ -1,7 +1,4 @@
-lib = File.expand_path("lib", __dir__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "conecta_address_br/version"
-
+require_relative "lib/conecta_address_br/version"
 Gem::Specification.new do |spec|
   spec.name          = "conecta_address_br"
   spec.version       = ConectaAddressBr::VERSION
