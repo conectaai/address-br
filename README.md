@@ -1,3 +1,7 @@
+# Conecta: Address BR
+[![Build Status]
+[![Gem Version]
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -15,10 +19,17 @@ Or install it yourself as:
     $ gem install conecta_address_br
 
 ## Usage
-Versão 0.1.3
+Versão 0.1.4
 
-Três funções foram implementadas nesta versão, organizadas em umm único arquivo
+Três funções foram implementadas nesta versão, organizadas em um único arquivo:
 
-ConectaAddressBr::States.all() << Retorna todos os estados do Brasil
-ConectaAddressBr::Cities.all() << Retorna todas as cidades do Brasil
-ConectaAddressBr::Cities.by_state(sigla_do_estado) << Retorna todas as cidades de um estado
+```ruby
+require 'conecta_address_br'
+
+ConectaAddressBr::States.all() # Retorna todos os estados do Brasil
+
+ConectaAddressBr::Cities.all() # Retorna todas as cidades do Brasil
+
+sigla_do_estado = "RJ"
+ConectaAddressBr::Cities.by_state(sigla_do_estado) # Retorna todas as cidades de um estado
+```
