@@ -1,6 +1,6 @@
 <img alt="Logo Conecta" data-src="https://www.conectaai.com/wp-content/themes/conecta/assets/images/conecta.svg" class="img-fluid none-mobile lazyloaded" src="https://www.conectaai.com/wp-content/themes/conecta/assets/images/conecta.svg">
 
-# Conecta: Address BR
+# Address BR
 
 ## Installation
 
