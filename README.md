@@ -1,6 +1,4 @@
 # Conecta: Address BR
-[![Build Status]
-[![Gem Version]
 
 ## Installation
 
@@ -26,9 +24,9 @@ Três funções foram implementadas nesta versão, organizadas em um único arqu
 ```ruby
 require 'conecta_address_br'
 
-ConectaAddressBr::States.all() # Retorna todos os estados do Brasil
+ConectaAddressBr::States.all # Retorna todos os estados do Brasil
 
-ConectaAddressBr::Cities.all() # Retorna todas as cidades do Brasil
+ConectaAddressBr::Cities.all # Retorna todas as cidades do Brasil
 
 sigla_do_estado = "RJ"
 ConectaAddressBr::Cities.by_state(sigla_do_estado) # Retorna todas as cidades de um estado
