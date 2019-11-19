@@ -26,21 +26,29 @@ Foram implementadas oito funções nesta versão para estruturar melhor estados 
 ```ruby
 require 'conecta_address_br'
 
-ConectaAddressBr::States.all # Retorna uma lista de nome e sigla de todos os estados do Brasil
+# Retorna uma lista de nome e sigla de todos os estados
+ConectaAddressBr::States.all
 
-ConectaAddressBr::States.all_initials # Retorna as siglas de todos os estados do Brasil
+# Retorna as siglas de todos os estados
+ConectaAddressBr::States.all_initials
 
-ConectaAddressBr::States.all_full_names # Retorna os nomes de todos os estados do Brasil
+# Retorna os nomes de todos os estados
+ConectaAddressBr::States.all_full_names
 
-ConectaAddressBr::Cities.all # Retorna uma lista do nome da cidade e sigla do estado de todas as cidades do Brasil
+# Retorna uma lista do nome da cidade e sigla do estado de todas as cidades
+ConectaAddressBr::Cities.all
 
-ConectaAddressBr::Cities.all_single # Retorna o nome de todas as cidades do Brasil
+# Retorna o nome de todas as cidades
+ConectaAddressBr::Cities.all_single
 
+# Retorna todas os nomes de cidades e sigla do estado de um estado
 sigla_do_estado = "RJ"
-ConectaAddressBr::Cities.by_state(sigla_do_estado) # Retorna todas os nomes de cidades e sigla do estado de um estado do Brasil
+ConectaAddressBr::Cities.by_state(sigla_do_estado)
 
-ConectaAddressBr::Cities.by_state_single(sigla_do_estado) # Retorna todas os nomes de cidades de um estado do Brasil
+# Retorna todas os nomes de cidades de um estado
+ConectaAddressBr::Cities.by_state_single(sigla_do_estado)
 
+# Retorna o estado de uma cidade
 cidade = "Rio de Janeiro"
-ConectaAddressBr::Cities.get_state(cidade) # Retorna o estado de uma cidade do Brasil
+ConectaAddressBr::Cities.get_state(cidade)
 ```
