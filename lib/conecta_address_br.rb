@@ -33,6 +33,22 @@ module ConectaAddressBr
         %w[Tocantins TO]
       ]
     end
+
+    def self.all_initials
+      states = []
+      ConectaAddressBr::States.all.each do |state| 
+        states.push(state[1])
+      end
+      return states
+    end
+
+    def self.all_full_names
+      states = []
+      ConectaAddressBr::States.all.each do |state| 
+        states.push(state[0])
+      end
+      return states
+    end
   end
 
   class ConectaAddressBr::Cities
@@ -5609,6 +5625,14 @@ module ConectaAddressBr
         ["Vila Propício", "GO"],
         ["Brasília", "DF"]
       ]
+    end
+
+    def self.all_single
+      cities = []
+      ConectaAddressBr::Cities.all.each do |city| 
+        cities.push(city[0])
+      end
+      return cities
     end
 
     def self.by_state(state_initial)

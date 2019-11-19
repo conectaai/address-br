@@ -2,39 +2,45 @@
 
 # Address BR
 
-## Installation
+## Instalação
 
-Add this line to your application's Gemfile:
+Adicione essa linha em seu Application Gemfile:
 
 ```ruby
 gem 'conecta_address_br'
 ```
 
-And then execute:
+E então execute:
 
     $ bundle
 
-Or install it yourself as:
+Ou instale você mesmo com:
 
     $ gem install conecta_address_br
 
-## Usage
-Versão 0.1.7
+## Usabilidade
+Versão 0.1.8
 
-Foram implementadas cinco funções nesta versão para estruturar melhor estados e cidades:
+Foram implementadas oito funções nesta versão para estruturar melhor estados e cidades:
 
 ```ruby
 require 'conecta_address_br'
 
-ConectaAddressBr::States.all # Retorna todos os estados do Brasil
+ConectaAddressBr::States.all # Retorna uma lista de nome e sigla de todos os estados do Brasil
 
-ConectaAddressBr::Cities.all # Retorna todas as cidades do Brasil
+ConectaAddressBr::States.all_initials # Retorna as siglas de todos os estados do Brasil
+
+ConectaAddressBr::States.all_full_names # Retorna os nomes de todos os estados do Brasil
+
+ConectaAddressBr::Cities.all # Retorna uma lista do nome da cidade e sigla do estado de todas as cidades do Brasil
+
+ConectaAddressBr::Cities.all_single # Retorna o nome de todas as cidades do Brasil
 
 sigla_do_estado = "RJ"
-ConectaAddressBr::Cities.by_state(sigla_do_estado) # Retorna todas as cidades/estados de um estado
+ConectaAddressBr::Cities.by_state(sigla_do_estado) # Retorna todas os nomes de cidades e sigla do estado de um estado do Brasil
 
-ConectaAddressBr::Cities.by_state_single(sigla_do_estado) # Retorna todas as cidades de um estado
+ConectaAddressBr::Cities.by_state_single(sigla_do_estado) # Retorna todas os nomes de cidades de um estado do Brasil
 
 cidade = "Rio de Janeiro"
-ConectaAddressBr::Cities.get_state(cidade) # Retorna o estado de uma cidade
+ConectaAddressBr::Cities.get_state(cidade) # Retorna o estado de uma cidade do Brasil
 ```
