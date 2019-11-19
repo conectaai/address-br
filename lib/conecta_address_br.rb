@@ -5614,6 +5614,22 @@ module ConectaAddressBr
     def self.by_state(state_initial)
       ConectaAddressBr::Cities.all.select {|city| city[1].include?(state_initial)}
     end
+
+    def self.by_state_single(state_initial)
+      cities = []
+      ConectaAddressBr::Cities.all.select do |city| 
+        cities.push(city[0]) if city[1].include?(state_initial)
+      end
+      return cities
+    end
+
+    def self.get_state(city_name)
+      estado = ""
+      ConectaAddressBr::Cities.all.select do |city| 
+        estado = city[1] if city[0].include?(city_name)
+      end
+      return estado
+    end
   end
 
   def fetch(keys)
