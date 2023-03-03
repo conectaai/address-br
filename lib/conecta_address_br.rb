@@ -49,6 +49,15 @@ module ConectaAddressBr
       end
       return states
     end
+
+    # returns a array with the States.all_full_names and States.all_initials to be used on a form.select
+    # >> [["Acre", "AC"], ["Alagoas", "AL"], ["Amapá", "AP"], ["Amazonas", "AM"], ["Bahia", "BA"], ["Ceará", "CE"], ["Distrito Federal", "DF"], ["Espírito Santo", "ES"], ["Goiás", "GO"], ["Maranhão", "MA"], ["Mato Grosso", "MT"], ["Mato Grosso do Sul", "MS"], ["Minas Gerais", "MG"], ["Pará", "PA"], ["Paraíba", "PB"], ["Paraná", "PR"], ["Pernambuco", "PE"], ["Piauí", "PI"], ["Rio de Janeiro", "RJ"], ["Rio Grande do Norte", "RN"], ["Rio Grande do Sul", "RS"], ["Rondônia", "RO"], ["Roraima", "RR"], ["Santa Catarina", "SC"], ["São Paulo", "SP"], ["Sergipe", "SE"], ["Tocantins", "TO"]
+    def self.states_for_select
+      ConectaAddressBr::States.all_full_names.each_with_index.map { |x, index| [ x , ConectaAddressBr::States.all_initials[index] ]  } 
+    end
+    # usage example
+    # <%= form.select :uf, options_for_select(ConectaAddressBr::States.states_for_select),{},{ class: "" } }%>
+    
   end
 
   class ConectaAddressBr::Cities
